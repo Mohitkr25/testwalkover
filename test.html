@@ -7,18 +7,117 @@
     <title>Document</title>
 
     <style>
-        .container{
-            background-color: red;
-        }
-        body{
-            background-color: red;
-        }
+    .container{
+        width: 100%;
+       height: 900px;
+       padding: 50px 0;
+       border: 3px solid black;
+       
+       overflow: hidden;
+
+    }
+    .container ul{
+        margin: 0;
+        padding: 0;
+    }
+    .container ul li{
+        list-style: none;
+        float: left;
+        width: 20%;
+        height: 300px;
+        margin: 40px 40px 0px 55px;
+        background: chocolate;
+    }
+   
+    .contentone{
+        width: fit-content;
+        height: 400px;
+        margin: 0 auto;
+        background: chocolate;
+        border: 1px solid black;
+        
+    }
+    
+    .fixbtm{
+        position: fixed;
+        width: 180px;
+        height: 45px;
+        line-height: 45px;
+        bottom: 10%;
+        right: 3%;
+
+    }
+    .b1{
+        width: 90%;
+        height: 140px;
+        background: cyan;
+        margin-bottom: 20px;
+    }
+    .b2{
+        width: 90%;
+        height: 140px;
+        background: cyan;
+    }
+    .b3{
+        width: 90%;
+        height: 140px;
+        background: cyan;
+        margin: 10px;
+        margin-left: 15px;
+    }
+    .b4{
+        width: 90%;
+        height: 125px;
+        background: cyan;
+        margin-bottom: 23px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .b5{
+        width: 50%;
+        height: 120px;
+        background: cyan;
+       margin: 1em;
+       background-color: cyan;
+    }
+    .conta{
+        display: flex;
+    }
+    @media screen and (min-width: 769px){
+	 .conatiner{
+         flex-direction: row;
+     }
+}
     </style>
 </head>
 <body>
-    <h1>hii</h1>
+    
+    
     <div class="container">
-        
+        <ul>
+            <li>
+                <div class="b1"></div>
+                <div class="b2"></div>
+            </li>
+            <li>
+                <div class="conta">
+
+                    <div class="b3"></div>
+                    <div class="b3"></div>
+                </div>
+                <div class="b4">
+
+                </div>
+            </li>
+            <li class="ex">
+                <div class="b5">
+
+                </div>
+            </li>
+        </ul>
+        <div class="fixbtm">
+            <button>Go to top</button>
+        </div>
     </div>
 </body>
 </html>
