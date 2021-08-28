@@ -1,0 +1,100 @@
+body {
+  margin: 0px;
+  width: 100%;
+}
+
+.button1 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+}
+
+.wrapper {
+  height: 600px;
+  width: 30%;
+  margin: 1em;
+  float: left;
+  max-width: 100%;
+}
+
+.con {
+  background-color: #5be0e5;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box1 {
+  width: 100%;
+  height: 50%;
+  background-color: #fe904c;
+  box-sizing: border-box;
+  float: left;
+}
+
+.a {
+  padding-right: 2em;
+  padding-bottom: 2em;
+}
+
+.b {
+  padding-right: 2em;
+  padding-top: 1em;
+}
+
+.box2 {
+  width: 50%;
+  height: 50%;
+  background-color: #fe904c;
+  box-sizing: border-box;
+  float: left;
+}
+
+.c {
+  padding: 1em;
+}
+
+.d {
+  padding-left: 1em;
+  padding-bottom: 1em;
+}
+
+.e {
+  padding-right: 1em;
+  padding-top: 1em;
+}
+
+.al {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .s {
+    width: 100%;
+  }
+
+  .wrapper {
+    margin-bottom: 1em;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 769px) and (max-width: 1200px) {
+  .m {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1201px) {
+  .l {
+    width: 100%;
+  }
+}
